@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="Folio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">MonPortfolio</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                    <li><a href="#apropos" class="nav-link">À propos</a></li>
+                    <li><a href="#competences" class="nav-link">Compétences</a></li>
+                    <li><a href="#projets" class="nav-link">Projets</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section Hero -->
+    <section id="accueil" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Bonjour, je suis <span class="highlight">LY BOCAR THIERNO</span></h1>
+                <h2 class="hero-subtitle">Développeur Web Passionné</h2>
+                <p class="hero-text">Je crée des expériences web modernes, responsives et efficaces avec HTML, CSS et JavaScript.</p>
+                <div class="hero-buttons">
+                    <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            </div>
+        </div>
+        <a href="#apropos" class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="apropos" class="about section">
+        <div class="container">
+            <h2 class="section-title">À propos de moi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Je suis un développeur web passionné par la création d'interfaces utilisateur intuitives et d'expériences digitales mémorables. J'aime transformer des concepts créatifs en réalités fonctionnelles.</p>
+                    <p>Autodidacte et curieux, je me tiens constamment à jour sur les dernières technologies et bonnes pratiques du développement web.</p>
+                    <p>En dehors du code, j'aime le sport et les voyages.</p>
+                </div>
+                <div class="about-info">
+                    <div class="info-item">
+                        <span class="info-label">Nom :</span>
+                        <span class="info-value">LY BOCAR THIERNO</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Localisation :</span>
+                        <span class="info-value">Ouagadougou</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Email :</span>
+                        <span class="info-value"> thiernoly385@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Disponibilité :</span>
+                        <span class="info-value">Ouvert aux opportunités</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="skills section">
+        <div class="container">
+            <h2 class="section-title">Mes Compétences</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Frontend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Outils & Autres</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Git</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Figma</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Responsive Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="projects section">
+        <div class="container">
+            <h2 class="section-title">Mes Projets</h2>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="javascript">JavaScript</button>
+                <button class="filter-btn" data-filter="responsive">Responsive</button>
+            </div>
+            <div class="projects-grid">
+            </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Contactez-moi</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-subtitle">Travaillons ensemble</h3>
+                    <p>N'hésitez pas à me contacter pour discuter de vos projets ou opportunités de collaboration.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>[votre.email@exemple.com]</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>[Votre Ville], [Votre Pays]</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-codepen"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Votre nom" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Votre email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Sujet" id="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Votre message" id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">&copy; <span id="currentYear"></span> [Votre Nom]. Tous droits réservés.</p>
+            <a href="#accueil" class="back-to-top">
+                <i class="fas fa-chevron-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
